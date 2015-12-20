@@ -12,6 +12,7 @@
 		FA5E23761C2660D500EEF895 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5E23741C2660D500EEF895 /* Main.storyboard */; };
 		FA5E23781C2660D500EEF895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA5E23771C2660D500EEF895 /* Assets.xcassets */; };
 		FA5E237B1C2660D500EEF895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA5E23791C2660D500EEF895 /* LaunchScreen.storyboard */; };
+		FAFC3E311C271B4F00895FCA /* WebserverSetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC3E301C271B4F00895FCA /* WebserverSetupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA5E23771C2660D500EEF895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA5E237A1C2660D500EEF895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA5E237C1C2660D500EEF895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFC3E301C271B4F00895FCA /* WebserverSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebserverSetupViewController.swift; path = Assets.xcassets/WebserverSetupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				FA5E23701C2660D500EEF895 /* AppDelegate.swift */,
 				FA5E23721C2660D500EEF895 /* ViewController.swift */,
 				FA5E23741C2660D500EEF895 /* Main.storyboard */,
+				FAFC3E301C271B4F00895FCA /* WebserverSetupViewController.swift */,
 				FA5E23771C2660D500EEF895 /* Assets.xcassets */,
 				FA5E23791C2660D500EEF895 /* LaunchScreen.storyboard */,
 				FA5E237C1C2660D500EEF895 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAFC3E311C271B4F00895FCA /* WebserverSetupViewController.swift in Sources */,
 				FA5E23731C2660D500EEF895 /* ViewController.swift in Sources */,
 				FA5E23711C2660D500EEF895 /* AppDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				FA5E23811C2660D500EEF895 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

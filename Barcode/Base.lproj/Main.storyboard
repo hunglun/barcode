@@ -18,10 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F5p-NU-aK4">
-                                <rect key="frame" x="0.0" y="64" width="600" height="307"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSh-cd-Jxq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSh-cd-Jxq">
                                 <rect key="frame" x="273" y="562" width="55" height="30"/>
                                 <state key="normal" title="Capture">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,7 +27,7 @@
                                     <action selector="startImageCapture:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xxd-BD-S4o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhv-U0-JGw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhv-U0-JGw">
                                 <rect key="frame" x="43" y="562" width="89" height="30"/>
                                 <state key="normal" title="Server Setup">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -39,18 +36,24 @@
                                     <segue destination="wKQ-cQ-Yha" kind="show" id="F2r-Gr-sum"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c0C-jv-MbS">
+                                <rect key="frame" x="155" y="123" width="290" height="183"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="F5p-NU-aK4" secondAttribute="trailing" constant="-20" id="3uK-k3-9Qp"/>
-                            <constraint firstItem="F5p-NU-aK4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QV8-8V-oQ0"/>
-                            <constraint firstItem="F5p-NU-aK4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="cNO-u7-QmF"/>
-                            <constraint firstItem="F5p-NU-aK4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dVr-PR-iqS"/>
+                            <constraint firstItem="qhv-U0-JGw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="23" id="3DT-EQ-HoB"/>
+                            <constraint firstItem="ZSh-cd-Jxq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Kph-t0-Nzc"/>
+                            <constraint firstItem="ZSh-cd-Jxq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="498" id="QbL-9v-H68"/>
+                            <constraint firstItem="qhv-U0-JGw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="498" id="Qbs-B0-vFg"/>
+                            <constraint firstItem="c0C-jv-MbS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j47-ow-luY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Scanner/Browser" id="sqh-tE-riV"/>
                     <connections>
-                        <outlet property="ImageView" destination="F5p-NU-aK4" id="IyM-fs-fza"/>
+                        <outlet property="cameraView" destination="c0C-jv-MbS" id="CaY-mn-f4W"/>
+                        <outlet property="captureButton" destination="ZSh-cd-Jxq" id="PW5-q6-rk7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
